@@ -1,7 +1,7 @@
 public class Fan {
     public static final int SLOW = 1;
     public static final int MEDIUM = 2;
-    static final int FAST = 3;
+    public static final int FAST = 3;
 
     private int speed;
     private boolean on;
