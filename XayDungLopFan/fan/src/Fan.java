@@ -1,7 +1,8 @@
 public class Fan {
-    private final int SLOW = 1;
-    private final int MEDIUM = 2;
-    private final int FAST = 3;
+    public static final int SLOW = 1;
+    public static final int MEDIUM = 2;
+    static final int FAST = 3;
+
     private int speed;
     private boolean on;
     private double radius;
@@ -30,21 +31,8 @@ public class Fan {
         return color;
     }
 
-    public void setSpeed(String choice) {
-        switch (choice) {
-            case "SLOW":
-                speed = SLOW;
-                break;
-            case "MEDIUM":
-                speed = MEDIUM;
-                break;
-            case "FAST":
-                speed = FAST;
-                break;
-            default:
-                System.out.println("No choice!");
-                break;
-        }
+    public void setSpeed(int speed) {
+        this.speed = speed;
     }
 
     public void setOn(boolean isOn) {
